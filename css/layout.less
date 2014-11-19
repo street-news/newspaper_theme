@@ -1,0 +1,299 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  padding: 0 20px;
+}
+
+#container {
+  > div[data-type="region"] {
+    > .container {
+      max-width: 1400px;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
+}
+
+@media @mq-phones-landscape {
+  #container {
+    > div[data-type="region"] {
+      > .container {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+}
+
+// Region: main
+// ----------------------------------------------------------------------------
+div[data-name="main"][data-type="region"] {
+  padding-top: 2 * @gutter-side-mobile;
+
+  div[data-type="region"] {
+    > .container {
+      margin-left: -1 * @gutter-side-mobile;
+      margin-right: -1 * @gutter-side-mobile;
+    }
+  }
+}
+
+@media @mq-tablets-and-below {
+  #container > .row {
+    > [data-name="ad_sidebar"] {display: none;}
+  }
+}
+
+// ad_top region
+div[data-name="ad_top"][data-type="region"] {
+  .row [class*="span"] {
+    min-height: 0;
+  }
+}
+
+//Header
+div[data-name="header"][data-type="region"] {
+  position: relative;
+  .sub-branding >.search {
+    float:right;
+    .ie7andLess & {
+      .form-text {
+        width: 168px;
+      }
+      .form-submit {
+        right: 15px;
+        .reset-filter();
+      }
+    }
+  }
+  .row [class*="span"] {
+    min-height: 0;
+  }
+  //Header Links
+  [id^="block-menu-block-newspaper-base-3"] {
+    .ie7andLess & {float: right;}
+    > nav {
+      width: 100%;
+      .control-group {
+        margin: 0;
+      }
+      ul.nav {
+        margin: 5px 0 0;
+        text-align: right;
+        > li {
+          display: inline-block;
+          list-style-type: none;
+          text-align: center;
+          line-height: 18px;
+          &:first-child {
+            border-left: none;
+          }
+
+          > a {
+            padding: 0 0.5em;
+            font-weight: bold;
+            color: @textHeadingColor;
+          }
+        }
+      }
+    }
+  }
+  //Main Menu
+  [id^="block-menu-block-newspaper-base-1"] {
+    margin-top: 10px;
+    .control-group {
+      margin: 0;
+    }
+
+    > .menu-block-wrapper {
+      .menu-root {
+        display: table;
+        width: 100%;
+      }
+      .nav {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: table;
+        .clearfix();
+        > li {
+          display: table-cell;
+          margin: 0;
+          padding: 0;
+          outline: 0;
+          width: 20%;
+          list-style-type: none;
+          > a {
+            display: block;
+            overflow: hidden; // Necessary for IE7 background gradient.
+            text-align: center;
+          }
+          &:first-child a { border-left: 0; }
+        }
+      }
+    }
+  }
+  [id^="block-newspaper-profile-solr-search-block"] {
+    padding: 0;
+  }
+}
+
+.ie7andLess {
+
+  [id^="block-menu-block-newspaper-base-1"] {
+    .hidden-xs,
+    .nav {
+      display: block;
+    }
+    li {
+      display: block;
+      border: 0 !important;
+      width: 19%;
+      float: left;
+    }
+    a {
+      border-left: 0 !important;
+    }
+  }
+}
+
+@media @mq-tablets-and-below {
+  [id^="block-menu-block-newspaper-base-3"] {
+    a {
+      font-size: 0.9em;
+      padding: 0 0.4em !important;
+    }
+  }
+}
+
+//Header Media Queries for under 787px
+@phone-container-padding: 10px;
+@media @mq-phones {
+  #container {
+    padding-left: @phone-container-padding;
+    padding-right: @phone-container-padding;
+  }
+  div[data-name="header"][data-type="region"] {
+    .bean-sociallinks {
+      display: none;
+    }
+
+    //Logo
+    [id^="block-ombuprofile-site-logo"] {
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    .search {
+      margin: @baseLineHeight/2 auto 0;
+    }
+    //Main Menu
+    [id^="block-menu-block-newspaper-base-1"] {
+      margin: @baseLineHeight/2 auto 0;
+      .select-menu {
+        width: 100%;
+      }
+    }
+  }
+}
+
+//Main Content Region
+div[data-type="region"][data-name="content"] {
+
+  .search-form {
+    margin: 1em 0;
+    padding-bottom: 2em;
+    border-bottom: 1px solid @lineGray;
+  }
+
+}
+//Any Sidebar
+div[data-name*="sidebar"] {
+  aside {
+    padding-bottom: 2em;
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
+//Footer
+div[data-type="region"][data-name="footer"] {
+  margin-top: 2 * @baseLineHeight;
+  .clearfix();
+
+  > .container {
+    padding: 2em 20px;
+  }
+
+  .row [class*="span"] {
+    min-height: 0;
+  }
+
+  //Menu
+  [id^="block-menu-block-newspaper-base-2"] {
+    > nav ul.nav {
+      margin: 0;
+      padding: 0;
+      > li {
+        list-style-type: none;
+        display: block;
+        float: left;
+        margin: 0;
+        padding: 0;
+        margin-left: 10px;
+        &:first-child {margin-left: 0;}
+        > a {
+          display: block;
+          color: @white;
+          #font.oswald(300, 20px, 33px);
+          text-transform: uppercase;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .control-group {
+      margin: 0;
+      .select-menu {
+        margin: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  #block-ombuprofile-user-link {
+    a {
+      .box-shadow(0 0 0 transparent);
+      filter: ~" "; // Clear the IE filter so the gradient is acutally gone.
+      background: @redActive;
+    }
+  }
+}
+@media @mq-phones {
+  div[data-type="region"][data-name="footer"] {
+    .span9 {
+      float: left;
+      width: 74.4681%;
+    }
+    .span3 {
+      float: left;
+      width: 23.4043%;
+      margin-left: 2.12766%;
+    }
+
+    #block-ombuprofile-user-link {
+      a {
+        display: block;
+      }
+    }
+  }
+}

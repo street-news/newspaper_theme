@@ -1,0 +1,38 @@
+@media print {
+
+  [data-type="region"][data-name="ad_top"] {
+    display: none;
+  }
+
+  [data-type="region"][data-name="header"] {
+    [data-type="block"] {
+      display: none;
+
+      &[id*="block-ombuprofile-site-logo"] {
+        display: block;
+
+        img {
+          display: block;
+        }
+      }
+    }
+  }
+
+  [data-type="region"][data-name*="sidebar"] {
+    display: none;
+  }
+
+  [class*="col"] {
+    float: none !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
+
+  .field-name-field-sharelinks,
+  #disqus_thread,
+  div[data-type="region"][data-name="footer"] {
+    display: none;
+  }
+
+}

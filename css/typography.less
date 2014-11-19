@@ -1,0 +1,76 @@
+@import "fonts.less";
+
+// Font Stacks
+#font {
+  .shorthand(@weight: normal, @size: 14px, @lineHeight: 20px) {
+    font-size: @size;
+    font-weight: @weight;
+    line-height: @lineHeight;
+  }
+  .oswald(@weight: normal, @size: 14px, @lineHeight: 20px) {
+    font-family: "Oswald", Tahoma, Helvetica, Arial, sans-serif;
+    font-size: @size;
+    font-weight: @weight;
+    line-height: @lineHeight;
+  }
+  .sans-serif(@weight: normal, @size: 14px, @lineHeight: 20px) {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: @size;
+    font-weight: @weight;
+    line-height: @lineHeight;
+  }
+  .serif(@weight: normal, @size: 14px, @lineHeight: 20px) {
+    font-family: "Georgia", Times New Roman, Times, serif;
+    font-size: @size;
+    font-weight: @weight;
+    line-height: @lineHeight;
+  }
+  .monospace(@weight: normal, @size: 12px, @lineHeight: 20px) {
+    font-family: "Monaco", Courier New, monospace;
+    font-size: @size;
+    font-weight: @weight;
+    line-height: @lineHeight;
+  }
+}
+
+.container-fluid {
+  .btn,
+  a.btn,
+  input.btn {
+    padding: 0 10px;
+  }
+
+  h1 {
+    font-size: 38px;
+    line-height: 38px * 1.428;
+  }
+
+  blockquote {
+    margin-top: 20px;
+    padding-left: 1em;
+    font-weight: normal;
+
+    p {
+      font-weight: normal;
+      line-height: 1.2em;
+    }
+  }
+
+  .pullquote-right {
+    margin: 1% 0 1% 1em;
+  }
+  .pullquote-left {
+    margin: 1% 1em 1% 0;
+  }
+}
+
+@media @mq-phones {
+  .container-fluid {
+    .pullquote-left,
+    .pullquote-right {
+      float: none;
+      width: 96%;
+      margin: 2%;
+    }
+  }
+}
