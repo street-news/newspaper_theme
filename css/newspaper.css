@@ -864,6 +864,20 @@ div[data-type="region"][data-name="console"].console-error {
   background-color: #dc0000;
   color: white;
 }
+#swipebox-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#swipebox-overlay img {
+  border: 10px solid white !important;
+}
+#swipebox-title {
+  line-height: 1.5;
+  padding: 1.0em 5.0em 1.0em 2.0em;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+#swipebox-top-bar {
+  background: transparent;
+}
 /* Overrive betterbase variables here and define your own */
 /** Site specific mixins & misc rules – may expand into dedicated file if it gets big */
 /* Site specific styles */
@@ -1857,9 +1871,23 @@ ol.search-results .search-result {
 .node-article .field-name-field-byline {
   margin-bottom: 0;
 }
+.node-article .field-name-field-images {
+  max-width: 300px;
+  margin: 0 2.0em 1.0em 0;
+  float: left;
+}
+.node-article .field-name-field-images img {
+  border: 1px solid #bbbdc0;
+  background-color: #f1f1f2;
+  width: auto !important;
+  height: auto !important;
+}
 .node-article .field-name-field-images a {
   position: relative;
   display: block;
+}
+.node-article .field-name-field-images a:hover {
+  text-decoration: none;
 }
 .node-article .field-name-field-images .click-notice {
   position: absolute;
@@ -1870,8 +1898,31 @@ ol.search-results .search-result {
   width: auto;
   padding: 0.125em 0.5em;
   margin: 1em 1em 0 0;
-  background-color: rgba(240, 240, 239, 0.8);
+  background-color: rgba(239, 239, 238, 0.8);
   border-radius: 3px;
+}
+.node-article .field-name-field-images figure {
+  position: relative;
+}
+.node-article .field-name-field-images figure .click-notice {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #bbbdc0;
+  left: auto;
+  right: 0;
+  bottom: 0;
+  margin: 0 4px 4px 0;
+  border-radius: 0;
+}
+.node-article .field-name-field-images figcaption {
+  width: 100%;
+  margin-top: 1.0em;
+  font-size: 12px;
+  line-height: 1.6;
+}
+.node-article .field-name-field-images figcaption .field {
+  color: #6d6e70;
+  font-style: italic;
+  display: inline;
 }
 .node-article .field-type-image {
   float: left;
