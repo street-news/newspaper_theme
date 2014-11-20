@@ -19,6 +19,9 @@
         <?php print render($page['content_top']); ?>
     <?php endif ?>
 
+    <?php if ($messages): ?>
+      <?php print $messages; ?>
+    <?php endif; ?>
 
     <div data-type="region" data-name="main">
       <div class="container">
@@ -28,9 +31,6 @@
           <?php if ($page['sidebar_first']): ?> <?php print render($page['sidebar_first']); ?> <?php endif ?>
 
           <div class="col-xs-12 col-sm-12 col-md-<?php print $content_col_span; ?> col-lg-<?php print $content_col_span; ?>">
-            <?php if ($messages): ?>
-              <div id="console" class="clearfix row-fluid"><?php print $messages; ?></div>
-            <?php endif; ?>
             <?php if ($page['content']): ?> <?php print render($page['content']); ?> <?php endif ?>
           </div>
 
