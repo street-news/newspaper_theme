@@ -1417,12 +1417,12 @@ img {
     display: none !important;
   }
 }
-.newspaper-base-featured-article .node {
+.callout .node {
   padding-top: 0.5em;
   margin-bottom: 0 !important;
 }
 @media (max-width: 767px) {
-  .newspaper-base-featured-article .node {
+  .callout .node {
     margin-bottom: 2em !important;
   }
 }
