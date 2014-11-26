@@ -1179,6 +1179,14 @@ img {
 .bean-linkbean .field > div > a {
   display: block;
 }
+.bean-style-list ul.results {
+  margin: 0;
+  padding: 0;
+}
+.bean-style-list ul.results li {
+  margin: 0.5em 0;
+  padding: 0;
+}
 .newspaper-base-issue-cover {
   overflow: hidden;
 }
