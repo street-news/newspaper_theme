@@ -1188,7 +1188,6 @@ img {
 .newspaper-base-issue-cover > .content {
   position: relative;
   padding-top: 0.5em;
-  padding-bottom: 50px;
 }
 .newspaper-base-issue-cover .issues,
 .newspaper-base-issue-cover .latest-issue {
@@ -1259,7 +1258,7 @@ img {
 }
 .newspaper-base-issue-cover .issues li .text,
 .newspaper-base-issue-cover .latest-issue li .text {
-  padding-top: 1.0em;
+  padding: 2.0em 0 0.8em 0;
   font-size: 0.85em;
   text-align: center;
   opacity: 0;
@@ -1269,6 +1268,7 @@ img {
 }
 .newspaper-base-issue-cover .issues li .text h6,
 .newspaper-base-issue-cover .latest-issue li .text h6 {
+  margin: 0;
   font-size: 1.2em;
   line-height: 1.5;
 }

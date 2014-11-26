@@ -32,7 +32,6 @@ img {
   > .content {
     position: relative;
     padding-top: 0.5em;
-    padding-bottom: 50px;
   }
 
   .issues, .latest-issue {
@@ -94,13 +93,14 @@ img {
       }
 
       .text {
-        padding-top: 1.0em;
+        padding: 2.0em 0 0.8em 0;
         font-size: 0.85em;
         text-align: center;
         .opacity(0);
         .transition(opacity @transition-duration-issue-carousel ease);
 
         h6 {
+          margin: 0;
           font-size: 1.2em;
           line-height: 1.5;
 
