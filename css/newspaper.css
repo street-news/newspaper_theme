@@ -1746,21 +1746,9 @@ ol.search-results .search-result {
 .facetapi-facetapi-links li.expanded .item-list ul.expanded li a {
   padding-left: 2em !important;
 }
-.facetapi-facetapi-links .facetapi-active {
-  border-left: 0.5em solid #a53819;
-}
 .facetapi-limit-link {
   display: block;
   margin-top: 0.5em;
-}
-.workbench-info-block {
-  border: 1px solid #FFEBC5 !important;
-  margin: 0.5em 0 !important;
-}
-.workbench-info-block .form-submit {
-  font-size: 14px !important;
-  line-height: 26px !important;
-  margin-top: -8px !important;
 }
 .node .links {
   margin: 0 0 1em 0;
@@ -1919,7 +1907,7 @@ ol.search-results .search-result {
   width: auto;
   padding: 0.125em 0.5em;
   margin: 1em 1em 0 0;
-  background-color: rgba(239, 239, 238, 0.8);
+  background-color: rgba(240, 240, 239, 0.8);
   border-radius: 3px;
 }
 .node-article .field-name-field-images figure {
