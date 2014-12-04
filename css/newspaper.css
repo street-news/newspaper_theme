@@ -865,7 +865,7 @@ div[data-type="region"][data-name="console"].console-error {
   color: white;
 }
 aside[data-module="ombubench"][data-delta="moderation"] {
-  background-color: #8cf08c;
+  background-color: #f9eea4;
   padding: 15px;
   margin-bottom: 15px;
 }
