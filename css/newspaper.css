@@ -864,6 +864,29 @@ div[data-type="region"][data-name="console"].console-error {
   background-color: #dc0000;
   color: white;
 }
+aside[data-module="ombubench"][data-delta="moderation"] {
+  background-color: #8cf08c;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+aside[data-module="ombubench"][data-delta="moderation"] h2 {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  font-size: 1.5em;
+  margin: 0.75em 0 0.25em 0;
+}
+aside[data-module="ombubench"][data-delta="moderation"] em {
+  font-style: normal;
+  font-weight: bold;
+  color: light-gray;
+}
+aside[data-module="ombubench"][data-delta="moderation"] em:last-child {
+  display: block;
+}
+aside[data-module="ombubench"][data-delta="moderation"] .btn {
+  margin-top: 0.5em;
+  color: white !important;
+}
 #swipebox-overlay {
   background-color: rgba(0, 0, 0, 0.5);
 }
