@@ -955,6 +955,30 @@ html {
     padding-right: 15px;
   }
 }
+.pull-left,
+.pull-right {
+  width: 40%;
+  min-width: 290px;
+  max-width: 100%;
+}
+.pull-left.pull-left,
+.pull-right.pull-left {
+  float: left;
+  margin-right: 40px;
+}
+.pull-left.pull-right,
+.pull-right.pull-right {
+  float: right;
+  margin-left: 40px;
+}
+.pull-left.pull-right img,
+.pull-right.pull-right img,
+.pull-left.pull-left img,
+.pull-right.pull-left img {
+  max-width: 100%;
+  width: auto !important;
+  height: auto !important;
+}
 div[data-name="main"][data-type="region"] {
   padding-top: 30px;
 }

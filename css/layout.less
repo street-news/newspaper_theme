@@ -28,6 +28,31 @@ body, html {
   }
 }
 
+.pull-left, .pull-right {
+  width: 40%;
+  min-width: 320 - 2 * @gutter-side-mobile;
+  max-width: 100%;
+
+  &.pull-left {
+    float: left;
+    margin-right: 40px;
+  }
+
+  &.pull-right {
+    float: right;
+    margin-left: 40px;
+  }
+
+  &.pull-right,
+  &.pull-left {
+    img {
+      max-width: 100%;
+      width: auto !important;
+      height: auto !important;
+    }
+  }
+}
+
 // Region: main
 // ----------------------------------------------------------------------------
 div[data-name="main"][data-type="region"] {
