@@ -1118,11 +1118,14 @@ div[data-name="header"][data-type="region"] [id^="block-newspaper-profile-solr-s
   div[data-name="header"][data-type="region"] .search {
     margin: 10px auto 0;
   }
-  div[data-name="header"][data-type="region"] [id^="block-menu-block-newspaper-base-1"] {
+  [id^="block-menu-block-newspaper-base-1"] {
     margin: 10px auto 0;
   }
-  div[data-name="header"][data-type="region"] [id^="block-menu-block-newspaper-base-1"] .select-menu {
-    width: 100%;
+  [id^="block-menu-block-newspaper-base-1"] .select-menu {
+    width: 90%;
+  }
+  [id^="block-menu-block-newspaper-base-1"] .select2-container {
+    padding-right: 20px;
   }
 }
 div[data-type="region"][data-name="content"] .search-form {
