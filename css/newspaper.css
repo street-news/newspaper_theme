@@ -2099,6 +2099,12 @@ ol.search-results .search-result {
 .node-article.node-title_list {
   border-bottom: 1px solid #e0dfdf;
 }
+.lt-ie10 #swipebox-top-bar {
+  top: 0px;
+}
+.lt-ie10 #swipebox-bottom-bar {
+  bottom: 10px;
+}
 .ombublock {
   float: left;
 }
