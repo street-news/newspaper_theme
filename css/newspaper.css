@@ -897,6 +897,7 @@ aside[data-module="ombubench"][data-delta="moderation"] .btn {
   line-height: 1.5;
   padding: 1.0em 5.0em 1.0em 2.0em;
   background-color: rgba(0, 0, 0, 0.9);
+  min-height: 50px;
 }
 #swipebox-top-bar {
   background: transparent;
@@ -1733,36 +1734,6 @@ ol.search-results .search-result {
   .apachesolr-browse-blocks [data-type="block"]:first-child + aside + aside + aside + aside + aside {
     margin-left: 0 !important;
   }
-}
-#jquery-lightbox #lightbox-container-image-data-box {
-  overflow: hidden;
-}
-#jquery-lightbox #lightbox-container-image-data-box #lightbox-container-image-data {
-  padding: 0;
-}
-#jquery-lightbox #lightbox-container-image-data-box #lightbox-container-image-data #lightbox-image-details {
-  float: none;
-  width: 100%;
-}
-#jquery-lightbox #lightbox-container-image-data-box #lightbox-container-image-data #lightbox-image-details #lightbox-image-details-caption {
-  display: block;
-  font-weight: normal;
-  white-space: normal;
-  font-size: 12px;
-  line-height: 1.2em;
-}
-#jquery-lightbox #lightbox-container-image-data-box #lightbox-container-image-data #lightbox-image-details #lightbox-image-details-currentNumber {
-  margin: 0.7em 0 0;
-  padding: 0;
-  display: block;
-  text-align: center;
-}
-#jquery-lightbox #lightbox-container-image-data-box #lightbox-secNav-btnClose {
-  display: block;
-  float: none;
-  width: auto;
-  margin: 0.7em 0;
-  padding: 0;
 }
 .user-articles {
   margin-top: 1em;
