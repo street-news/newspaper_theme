@@ -2036,7 +2036,7 @@ ul#breakpoints {
   list-style: none;
 }
 .page-archive .issue-grid ul li {
-  padding-bottom: 1.5em;
+  padding-bottom: .75em;
 }
 .page-archive .issue-grid ul li a {
   color: #646464;
@@ -2047,6 +2047,7 @@ ul#breakpoints {
 .page-archive .issue-grid ul li .text {
   font-size: 0.75em;
   text-align: center;
+  min-height: 60px;
 }
 .page-archive .issue-grid ul li .text h6 {
   margin: 0;
