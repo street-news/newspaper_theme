@@ -2027,6 +2027,39 @@ ol.search-results .search-result {
 ul#breakpoints {
   display: none;
 }
+.page-archive #block-ombucleanup-page-title {
+  display: none;
+}
+.page-archive .issue-grid ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.page-archive .issue-grid ul li {
+  padding-bottom: 1.5em;
+}
+.page-archive .issue-grid ul li a {
+  color: #646464;
+}
+.page-archive .issue-grid ul li .image img {
+  height: auto;
+}
+.page-archive .issue-grid ul li .text {
+  font-size: 0.75em;
+  text-align: center;
+}
+.page-archive .issue-grid ul li .text h6 {
+  margin: 0;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+.page-archive .issue-grid ul li .text h6 strong {
+  font-weight: normal;
+}
+.page-archive .issue-grid ul li .text .description {
+  margin-top: 0;
+  color: #999999;
+}
 .node .links {
   margin: 0 0 1em 0;
   padding: 0;

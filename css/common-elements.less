@@ -607,6 +607,54 @@ ol.search-results {
   display: block;
   margin-top: 0.5em;
 }
+
 ul#breakpoints {
   display: none;
+}
+
+// Archive page : Issue Grid.
+.page-archive {
+  #block-ombucleanup-page-title {
+    display: none;
+  }
+
+  .issue-grid {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        padding-bottom: 1.5em;
+
+        a {
+          color: @textColor;
+        }
+
+        .image {
+          img {
+            height: auto;
+          }
+        }
+        .text {
+          font-size: 0.75em;
+          text-align: center;
+
+          h6 {
+            margin: 0;
+            font-size: 1.2em;
+            line-height: 1.5;
+
+            strong {
+              font-weight: normal;
+            }
+          }
+          .description {
+            margin-top: 0;
+            color: @grayLight;
+          }
+        }
+      }
+    }
+  }
 }

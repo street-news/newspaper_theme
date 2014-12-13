@@ -253,8 +253,7 @@ function newspaper_theme_pager($variables) {
 function newspaper_theme_apachesolr_search_browse_blocks($vars) {
   $result = '';
   if ($vars['content']['#children']) {
-    $result .= "<div class='apachesolr-browse-blocks'>\n<h2>" . t('Browse available categories') . "</h2>\n";
-    $result .= '<p>' . t('Pick a category to launch a search.') . "</p>\n";
+    $result .= "<div class='apachesolr-browse-blocks'>\n<h3>" . t('Or Start a Search By:') . "</h3>\n";
     $result .= '<div class="blocks">';
     $result .= $vars['content']['#children'] . "\n</div>\n";
     $result .= '</div>';
