@@ -521,32 +521,15 @@ ol.search-results {
 }
 
 .apachesolr-browse-blocks {
-  [data-type="block"] {
-    float: left;
-    width: 48.9362%;
-    margin-bottom: 2em;
-
-    h2 {
-      font-weight: 300 !important;
-      font-size: 25px !important;
-      line-height: 25px * 1.65;
-      text-transform: uppercase;
+  .facetapi-facetapi-links {
+    a.facetapi-inactive {
+      font-size: 1em;
+      padding-left: 0;
+      &:before {
+        border: 0;
+        background-color: transparent;
+      }
     }
-
-    // 1st column.
-    &:first-child,
-    &:first-child + aside + aside,
-    &:first-child + aside + aside + aside + aside {
-      clear: both;
-    }
-
-    // 2nd column.
-    &:first-child + aside,
-    &:first-child + aside + aside + aside,
-    &:first-child + aside + aside + aside + aside + aside {
-      margin-left: 2.12766% !important;
-    }
-
   }
 }
 @media @mq-phones {

@@ -1960,26 +1960,13 @@ ol.search-results .search-result {
   padding-bottom: 4px;
   border-bottom: 1px solid #e0dfdf;
 }
-.apachesolr-browse-blocks [data-type="block"] {
-  float: left;
-  width: 48.9362%;
-  margin-bottom: 2em;
+.apachesolr-browse-blocks .facetapi-facetapi-links a.facetapi-inactive {
+  font-size: 1em;
+  padding-left: 0;
 }
-.apachesolr-browse-blocks [data-type="block"] h2 {
-  font-weight: 300 !important;
-  font-size: 25px !important;
-  line-height: 41.25px;
-  text-transform: uppercase;
-}
-.apachesolr-browse-blocks [data-type="block"]:first-child,
-.apachesolr-browse-blocks [data-type="block"]:first-child + aside + aside,
-.apachesolr-browse-blocks [data-type="block"]:first-child + aside + aside + aside + aside {
-  clear: both;
-}
-.apachesolr-browse-blocks [data-type="block"]:first-child + aside,
-.apachesolr-browse-blocks [data-type="block"]:first-child + aside + aside + aside,
-.apachesolr-browse-blocks [data-type="block"]:first-child + aside + aside + aside + aside + aside {
-  margin-left: 2.12766% !important;
+.apachesolr-browse-blocks .facetapi-facetapi-links a.facetapi-inactive:before {
+  border: 0;
+  background-color: transparent;
 }
 @media (max-width: 767px) {
   .apachesolr-browse-blocks [data-type="block"] {

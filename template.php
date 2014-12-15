@@ -254,7 +254,7 @@ function newspaper_theme_apachesolr_search_browse_blocks($vars) {
   $result = '';
   if ($vars['content']['#children']) {
     $result .= "<div class='apachesolr-browse-blocks'>\n<h3>" . t('Or Start a Search By:') . "</h3>\n";
-    $result .= '<div class="blocks">';
+    $result .= '<div class="blocks row">';
     $result .= $vars['content']['#children'] . "\n</div>\n";
     $result .= '</div>';
   }
