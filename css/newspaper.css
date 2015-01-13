@@ -2379,6 +2379,22 @@ ul#breakpoints {
 .node-article.node-title_list {
   border-bottom: 1px solid #e0dfdf;
 }
+pre.pull-left,
+pre.pull-right {
+  font-family: inherit;
+}
+figure figcaption {
+  white-space: normal;
+  width: 100%;
+  margin-top: 1.0em;
+  font-size: 12px;
+  line-height: 1.6;
+}
+figure figcaption .field {
+  color: #6d6e70;
+  font-style: italic;
+  display: inline;
+}
 .lt-ie10 #swipebox-top-bar {
   top: 0px;
 }
