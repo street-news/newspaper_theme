@@ -2175,9 +2175,6 @@ ul#breakpoints {
 .node-article .field .field {
   margin-bottom: 0;
 }
-.node-article .field-name-field-byline {
-  margin-bottom: 0;
-}
 .node-article .field-name-field-images {
   max-width: 300px;
   margin: 0 2.0em 1.0em 0;
@@ -2205,7 +2202,7 @@ ul#breakpoints {
   width: auto;
   padding: 0.125em 0.5em;
   margin: 1em 1em 0 0;
-  background-color: rgba(240, 240, 239, 0.8);
+  background-color: rgba(239, 239, 238, 0.8);
   border-radius: 3px;
 }
 .node-article .field-name-field-images figure {
