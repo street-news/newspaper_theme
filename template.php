@@ -348,7 +348,10 @@ function newspaper_theme_page_alter(&$page) {
 function newspaper_theme_block_view_alter(&$data, $block) {
   // Remove visible-xs class from select menu, since it interferes with select2.
   if (in_array($block->module, array('menu_block'))) {
-    $classes =& $data['content']['#content']['select']['#attributes']['class'];
+    $classes = array();
+    if (isset($data['content']['#content']['select']['#attributes']['class']) && is_array($data['content']['#content']['select']['#attributes']['class'])) {
+      $classes = $data['content']['#content']['select']['#attributes']['class'];
+    }
     if ($classes) {
       unset($classes[array_search('visible-xs', $classes)]);
     }
